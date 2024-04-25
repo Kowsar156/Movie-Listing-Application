@@ -53,4 +53,9 @@ public class MovieListingApp {
         Collections.sort(result, Comparator.comparing(Movie::getTitle));
         return result;
     }
+
+    // Add movie to user's favorites
+    public void addToFavorites(User user, Movie movie) {
+        user.addFavorite(movie);
+    }
 }

@@ -67,6 +67,7 @@ class MovieTest {
         Movie movie = new Movie("Dredd", Arrays.asList("Karl Urban", "Olivia Thirlby"), "Science Fiction", "2012", 30000000);
         app.addToFavorites(user, movie);
         assertEquals(1, user.getFavorites().size());
+        assertEquals("Dredd", user.getFavorites().get(0).getTitle());
     }
 }
 
