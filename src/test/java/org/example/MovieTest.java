@@ -11,8 +11,8 @@ class MovieTest {
     @Test
     void testRegisterUser() {
         MovieListingApp app = new MovieListingApp();
-        app.registerUser("test@example.com");
-        assertEquals(1, app.users.size());
+        app.registerUser("test", "test@example.com");
+        assertEquals(1, app.getUsers().size());
     }
 }
 
