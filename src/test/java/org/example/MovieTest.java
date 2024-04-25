@@ -59,5 +59,14 @@ class MovieTest {
         assertEquals(2, searchResults.size());
         assertEquals("The Dark Knight", searchResults.get(0).getTitle());
     }
+
+    @Test
+    void testAddFavorites() {
+        MovieListingApp app = new MovieListingApp();
+        User user = new User("test","test@example.com");
+        Movie movie = new Movie("Dredd", Arrays.asList("Karl Urban", "Olivia Thirlby"), "Science Fiction", "2012", 30000000);
+        app.addToFavorites(user, movie);
+        assertEquals(1, user.getFavorites().size());
+    }
 }
 
