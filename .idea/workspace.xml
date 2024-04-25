@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21ca708d-4a55-4665-b056-aa1068fa5dcd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MovieListingApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MovieListingApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/MovieTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +38,7 @@
     "JUnit.MovieTest.testAddFavorites.executor": "Run",
     "JUnit.MovieTest.testAddMovie.executor": "Run",
     "JUnit.MovieTest.testGetMovieDetails.executor": "Run",
+    "JUnit.MovieTest.testPersonalDetailsAndFavoriteMovies.executor": "Run",
     "JUnit.MovieTest.testRegisterUser.executor": "Run",
     "JUnit.MovieTest.testRemoveFavorites.executor": "Run",
     "JUnit.MovieTest.testSearchFavoriteMovies.executor": "Run",
@@ -61,22 +62,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MovieTest.testSearchFavoriteMovies">
-    <configuration name="MovieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Movie_Listing_Application" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.MovieTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MovieTest.testPersonalDetailsAndFavoriteMovies">
     <configuration name="MovieTest.testAddFavorites" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Movie_Listing_Application" />
       <extension name="coverage">
@@ -88,6 +74,22 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.MovieTest" />
       <option name="METHOD_NAME" value="testAddFavorites" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieTest.testPersonalDetailsAndFavoriteMovies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Movie_Listing_Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.MovieTest" />
+      <option name="METHOD_NAME" value="testPersonalDetailsAndFavoriteMovies" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MovieTest.testPersonalDetailsAndFavoriteMovies" />
         <item itemvalue="JUnit.MovieTest.testSearchFavoriteMovies" />
         <item itemvalue="JUnit.MovieTest.testRemoveFavorites" />
         <item itemvalue="JUnit.MovieTest.testAddFavorites" />
         <item itemvalue="JUnit.MovieTest.testSearchMovies" />
-        <item itemvalue="JUnit.MovieTest" />
       </list>
     </recent_temporary>
   </component>

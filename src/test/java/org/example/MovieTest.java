@@ -3,8 +3,8 @@ package org.example;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class MovieTest {
@@ -102,6 +102,35 @@ class MovieTest {
         List<Movie> searchResults = app.searchUserFavorites(user, "Lord of the Rings");
         assertEquals(3, searchResults.size());
         assertEquals("The Lord of the Rings: The Fellowship of the Ring", searchResults.get(0).getTitle());
+    }
+
+    @Test
+    void testPersonalDetailsAndFavoriteMovies(){
+        MovieListingApp app = new MovieListingApp();
+        User user = new User("test","test@example.com");
+        Movie movie1 = new Movie("Arrival", Arrays.asList("Jeremy Renner", "Amy Adams"),
+                "Science Fiction", "2016", 47000000);
+        Movie movie2 = new Movie("The Mist", Arrays.asList("Thomas Jane", "Alexa Davalos"),
+                "Science Fiction", "2007", 18000000);
+        Movie movie3 = new Movie("Battleship", Arrays.asList("Taylor Kitsch", "Liam Neeson", "Rihanna"),
+                "Science Fiction", "2012", 220000000);
+        Movie movie4 = new Movie("Godzilla: King of the Monsters",
+                Arrays.asList("Millie Bobby Brown", "Ken Watanabe", "Kyle Chandler"),
+                "Science Fiction", "2019", 200000000);
+        app.addToFavorites(user, movie1);
+        app.addToFavorites(user, movie2);
+        app.addToFavorites(user, movie3);
+        app.addToFavorites(user, movie4);
+
+
+        List<Movie> favoriteMovies = user.getFavorites();
+        Collections.sort(favoriteMovies, Comparator.comparing(Movie::getTitle));
+        assertEquals("test@example.com", user.getEmail());
+        assertEquals(4, favoriteMovies.size());
+        assertTrue(favoriteMovies.get(0).getTitle().toLowerCase().contains("Arrival".toLowerCase()));
+        assertTrue(favoriteMovies.get(1).getTitle().toLowerCase().contains("Battle".toLowerCase()));
+        assertTrue(favoriteMovies.get(2).getTitle().toLowerCase().contains("Godzilla".toLowerCase()));
+        assertTrue(favoriteMovies.get(3).getTitle().toLowerCase().contains("Mist".toLowerCase()));
     }
 }
 
