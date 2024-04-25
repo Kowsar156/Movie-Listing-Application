@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21ca708d-4a55-4665-b056-aa1068fa5dcd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MovieListingApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/MovieTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +34,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.MovieTest.testAddMovie.executor": "Run",
     "JUnit.MovieTest.testRegisterUser.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
@@ -57,7 +55,23 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.MovieTest.testAddMovie">
+    <configuration name="MovieTest.testAddMovie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Movie_Listing_Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.MovieTest" />
+      <option name="METHOD_NAME" value="testAddMovie" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MovieTest.testRegisterUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Movie_Listing_Application" />
       <extension name="coverage">
@@ -76,6 +90,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MovieTest.testAddMovie" />
         <item itemvalue="JUnit.MovieTest.testRegisterUser" />
       </list>
     </recent_temporary>

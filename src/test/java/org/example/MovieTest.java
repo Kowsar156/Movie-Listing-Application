@@ -14,5 +14,13 @@ class MovieTest {
         app.registerUser("test", "test@example.com");
         assertEquals(1, app.getUsers().size());
     }
+
+    @Test
+    void testAddMovie() {
+        MovieListingApp app = new MovieListingApp();
+        Movie movie = new Movie("Interstellar", Arrays.asList("Matthew McConaughey", "Anne Hathaway", "Timothée Chalamet", "Matt Damon"), "Science Fiction", "2014", 165000000);
+        app.addMovie(movie);
+        assertEquals(1, app.getMovies().size());
+    }
 }
 
