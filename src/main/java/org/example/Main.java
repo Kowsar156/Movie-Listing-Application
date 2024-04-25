@@ -34,17 +34,16 @@ public class Main {
             System.out.print("Email: ");
             String email = scn.nextLine();
 
-            User user;
 
             if (app.getExistingUser(email) == null){
+                //System.out.println("NO user like this. Creating new user.");
                 app.registerUser(name, email);
-                user = new User(name, email);
             }
-            else {
-                user = app.getExistingUser(email);
-            }
+
+            User user = app.getExistingUser(email);
+
             while (true) {
-                System.out.println("Please choose your option: \n" +
+                System.out.println("\nPlease choose your option: \n" +
                         "1. Search a Movie in the app\n" +
                         "2. See details of a movie\n" +
                         "3. Add a movie to your favorites\n" +

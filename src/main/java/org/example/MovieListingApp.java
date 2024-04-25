@@ -13,7 +13,12 @@ public class MovieListingApp {
     // Check user's previous registration
     public User getExistingUser(String email){
         for (User u : users){
-            if (u.getEmail() == email){
+//            System.out.println(u.getEmail());
+//            List<Movie> fav = u.getFavorites();
+//            for (Movie m : fav) {
+//                System.out.println(m.getTitle());
+//            }
+            if (u.getEmail().equalsIgnoreCase(email)){
                 return u;
             }
         }
