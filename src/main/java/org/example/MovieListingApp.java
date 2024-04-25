@@ -63,4 +63,19 @@ public class MovieListingApp {
     public void removeFromFavorites(User user, Movie movie) {
         user.removeFavorite(movie);
     }
+
+    // Search only movies in user's favorites
+    public List<Movie> searchUserFavorites(User user, String query){
+        List<Movie> favorites = user.getFavorites();
+        List<Movie> result = new ArrayList<>();
+        for (Movie movie : favorites) {
+            if (movie.getTitle().toLowerCase().contains(query.toLowerCase()) ||
+                    movie.getCast().contains(query.toLowerCase()) ||
+                    movie.getCategory().toLowerCase().contains(query.toLowerCase())) {
+                result.add(movie);
+            }
+        }
+        Collections.sort(result, Comparator.comparing(Movie::getTitle));
+        return result;
+    }
 }

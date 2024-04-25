@@ -95,9 +95,9 @@ class MovieTest {
         Movie movie3 = new Movie("The Lord of the Rings: The Return of the King",
                 Arrays.asList("Elijah Wood", "Viggo Mortensen", "Ian McKellen", "Orlando Bloom", "Karl Urban"),
                 "Fantasy", "2003", 94000000);
-        app.addMovie(movie1);
-        app.addMovie(movie2);
-        app.addMovie(movie3);
+        app.addToFavorites(user, movie1);
+        app.addToFavorites(user, movie2);
+        app.addToFavorites(user, movie3);
 
         List<Movie> searchResults = app.searchUserFavorites(user, "Lord of the Rings");
         assertEquals(3, searchResults.size());
