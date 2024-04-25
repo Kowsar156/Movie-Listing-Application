@@ -81,5 +81,27 @@ class MovieTest {
         app.removeFromFavorites(user, movie);
         assertEquals(0, user.getFavorites().size());
     }
+
+    @Test
+    void testSearchFavoriteMovies() {
+        MovieListingApp app = new MovieListingApp();
+        User user = new User("test","test@example.com");
+        Movie movie1 = new Movie("The Lord of the Rings: The Fellowship of the Ring",
+                Arrays.asList("Elijah Wood", "Viggo Mortensen", "Ian McKellen", "Orlando Bloom", "Cate Blanchett"),
+                "Fantasy", "2001", 93000000);
+        Movie movie2 = new Movie("The Lord of the Rings: The Two Towers",
+                Arrays.asList("Elijah Wood", "Viggo Mortensen", "Ian McKellen", "Orlando Bloom", "Miranda Otto", "Karl Urban"),
+                "Fantasy", "2002", 94000000);
+        Movie movie3 = new Movie("The Lord of the Rings: The Return of the King",
+                Arrays.asList("Elijah Wood", "Viggo Mortensen", "Ian McKellen", "Orlando Bloom", "Karl Urban"),
+                "Fantasy", "2003", 94000000);
+        app.addMovie(movie1);
+        app.addMovie(movie2);
+        app.addMovie(movie3);
+
+        List<Movie> searchResults = app.searchUserFavorites(user, "Lord of the Rings");
+        assertEquals(3, searchResults.size());
+        assertEquals("The Lord of the Rings: The Fellowship of the Ring", searchResults.get(0).getTitle());
+    }
 }
 
