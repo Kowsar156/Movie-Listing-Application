@@ -10,6 +10,16 @@ public class MovieListingApp {
         this.users = new ArrayList<>();
     }
 
+    // Check user's previous registration
+    public User getExistingUser(String email){
+        for (User u : users){
+            if (u.getEmail() == email){
+                return u;
+            }
+        }
+        return null;
+    }
+
     // Register user with email address
     public void registerUser(String name, String email) {
         users.add(new User(name, email));
@@ -45,14 +55,15 @@ public class MovieListingApp {
         List<Movie> result = new ArrayList<>();
         for (Movie movie : movies) {
             if (movie.getTitle().toLowerCase().contains(query.toLowerCase()) ||
-                    movie.getCast().contains(query.toLowerCase()) ||
-                    movie.getCategory().toLowerCase().contains(query.toLowerCase())) {
+                    movie.getCategory().toLowerCase().contains(query.toLowerCase()) ||
+                    movie.getCast().stream().anyMatch(castMember -> castMember.toLowerCase().contains(query.toLowerCase()))) {
                 result.add(movie);
             }
         }
         Collections.sort(result, Comparator.comparing(Movie::getTitle));
         return result;
     }
+
 
     // Add movie to user's favorites
     public void addToFavorites(User user, Movie movie) {
@@ -70,8 +81,8 @@ public class MovieListingApp {
         List<Movie> result = new ArrayList<>();
         for (Movie movie : favorites) {
             if (movie.getTitle().toLowerCase().contains(query.toLowerCase()) ||
-                    movie.getCast().contains(query.toLowerCase()) ||
-                    movie.getCategory().toLowerCase().contains(query.toLowerCase())) {
+                    movie.getCategory().toLowerCase().contains(query.toLowerCase()) ||
+                    movie.getCast().stream().anyMatch(castMember -> castMember.toLowerCase().contains(query.toLowerCase()))) {
                 result.add(movie);
             }
         }

@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21ca708d-4a55-4665-b056-aa1068fa5dcd" name="Changes" comment="" />
+    <list default="true" id="21ca708d-4a55-4665-b056-aa1068fa5dcd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MovieListingApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MovieListingApp.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +36,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "JUnit.MovieTest.executor": "Run",
     "JUnit.MovieTest.testAddFavorites.executor": "Run",
     "JUnit.MovieTest.testAddMovie.executor": "Run",
@@ -60,7 +65,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MovieTest">
+  <component name="RunManager">
     <configuration name="MovieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Movie_Listing_Application" />
       <extension name="coverage">
