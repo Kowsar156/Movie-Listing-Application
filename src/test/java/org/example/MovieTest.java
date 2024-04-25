@@ -64,10 +64,22 @@ class MovieTest {
     void testAddFavorites() {
         MovieListingApp app = new MovieListingApp();
         User user = new User("test","test@example.com");
-        Movie movie = new Movie("Dredd", Arrays.asList("Karl Urban", "Olivia Thirlby"), "Science Fiction", "2012", 30000000);
+        Movie movie = new Movie("Dredd", Arrays.asList("Karl Urban", "Olivia Thirlby"),
+                "Science Fiction", "2012", 30000000);
         app.addToFavorites(user, movie);
         assertEquals(1, user.getFavorites().size());
         assertEquals("Dredd", user.getFavorites().get(0).getTitle());
+    }
+
+    @Test
+    void testRemoveFavorites() {
+        MovieListingApp app = new MovieListingApp();
+        User user = new User("test","test@example.com");
+        Movie movie = new Movie("Ratsasan", Arrays.asList("Vishnu Vishal", "Amala Paul"),
+                "Crime Thriller", "2018", 600000);
+        app.addToFavorites(user, movie);
+        app.removeFromFavorites(user, movie);
+        assertEquals(0, user.getFavorites().size());
     }
 }
 
