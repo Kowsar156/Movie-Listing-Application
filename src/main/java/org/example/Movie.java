@@ -1,2 +1,5 @@
-package org.example;public class Movie {
+package org.example;
+
+public class Movie {
+    
 }
