@@ -39,4 +39,18 @@ public class MovieListingApp {
         }
         return null;
     }
+
+    // Search all movies matching title, cast, or category
+    public List<Movie> searchMovies(String query) {
+        List<Movie> result = new ArrayList<>();
+        for (Movie movie : movies) {
+            if (movie.getTitle().toLowerCase().contains(query.toLowerCase()) ||
+                    movie.getCast().contains(query.toLowerCase()) ||
+                    movie.getCategory().toLowerCase().contains(query.toLowerCase())) {
+                result.add(movie);
+            }
+        }
+        Collections.sort(result, Comparator.comparing(Movie::getTitle));
+        return result;
+    }
 }
