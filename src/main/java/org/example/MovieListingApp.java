@@ -58,4 +58,9 @@ public class MovieListingApp {
     public void addToFavorites(User user, Movie movie) {
         user.addFavorite(movie);
     }
+
+    // Remove movie from user's favorites
+    public void removeFromFavorites(User user, Movie movie) {
+        user.removeFavorite(movie);
+    }
 }
