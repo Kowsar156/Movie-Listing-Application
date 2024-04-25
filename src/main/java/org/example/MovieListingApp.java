@@ -15,8 +15,18 @@ public class MovieListingApp {
         users.add(new User(name, email));
     }
 
+    // Add movie to the app
+    public void addMovie(Movie movie) {
+        movies.add(movie);
+    }
+
     // Get User List
     public List<User> getUsers(){
         return users;
+    }
+
+    // Get Movie List
+    public List<Movie> getMovies(){
+        return movies;
     }
 }

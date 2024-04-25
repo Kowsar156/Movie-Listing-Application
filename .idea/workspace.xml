@@ -55,7 +55,22 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MovieTest.testAddMovie">
+  <component name="RunManager" selected="JUnit.MovieTest">
+    <configuration name="MovieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Movie_Listing_Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.MovieTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MovieTest.testAddMovie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Movie_Listing_Application" />
       <extension name="coverage">
@@ -90,6 +105,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MovieTest" />
         <item itemvalue="JUnit.MovieTest.testAddMovie" />
         <item itemvalue="JUnit.MovieTest.testRegisterUser" />
       </list>
