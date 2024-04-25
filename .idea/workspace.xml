@@ -34,7 +34,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.MovieTest.executor": "Run",
     "JUnit.MovieTest.testAddMovie.executor": "Run",
+    "JUnit.MovieTest.testGetMovieDetails.executor": "Run",
     "JUnit.MovieTest.testRegisterUser.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
@@ -87,6 +89,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MovieTest.testGetMovieDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Movie_Listing_Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.MovieTest" />
+      <option name="METHOD_NAME" value="testGetMovieDetails" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MovieTest.testRegisterUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Movie_Listing_Application" />
       <extension name="coverage">
@@ -106,6 +124,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MovieTest" />
+        <item itemvalue="JUnit.MovieTest.testGetMovieDetails" />
         <item itemvalue="JUnit.MovieTest.testAddMovie" />
         <item itemvalue="JUnit.MovieTest.testRegisterUser" />
       </list>
