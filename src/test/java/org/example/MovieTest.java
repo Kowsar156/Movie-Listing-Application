@@ -37,5 +37,18 @@ class MovieTest {
         assertEquals("2024", retrievedMovie.getReleaseDate());
         assertEquals(190000000, retrievedMovie.getBudget());
     }
+
+    @Test
+    void testSearchMovies() {
+        MovieListingApp app = new MovieListingApp();
+        Movie movie1 = new Movie("The Dark Knight", Arrays.asList("Christian Bale", "Heath Ledger", "Gary Oldman", "Morgan Freeman", "Cillian Murphy"), "Action", "2008", 185000000);
+        Movie movie2 = new Movie("The Dark Knight Rises", Arrays.asList("Christian Bale", "Tom Hardy", "Anne Hathaway", "Gary Oldman", "Morgan Freeman", "Cillian Murphy"), "Action", "2012", 250000000);
+        app.addMovie(movie1);
+        app.addMovie(movie2);
+
+        List<Movie> searchResults = app.searchMovies("Dark");
+        assertEquals(2, searchResults.size());
+        assertEquals("The Dark Knight", searchResults.get(0).getTitle());
+    }
 }
 

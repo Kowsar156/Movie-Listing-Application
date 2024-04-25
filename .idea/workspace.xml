@@ -38,6 +38,7 @@
     "JUnit.MovieTest.testAddMovie.executor": "Run",
     "JUnit.MovieTest.testGetMovieDetails.executor": "Run",
     "JUnit.MovieTest.testRegisterUser.executor": "Run",
+    "JUnit.MovieTest.testSearchMovies.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
@@ -57,7 +58,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MovieTest">
+  <component name="RunManager" selected="JUnit.MovieTest.testSearchMovies">
     <configuration name="MovieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Movie_Listing_Application" />
       <extension name="coverage">
@@ -121,8 +122,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MovieTest.testSearchMovies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Movie_Listing_Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.MovieTest" />
+      <option name="METHOD_NAME" value="testSearchMovies" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MovieTest.testSearchMovies" />
         <item itemvalue="JUnit.MovieTest" />
         <item itemvalue="JUnit.MovieTest.testGetMovieDetails" />
         <item itemvalue="JUnit.MovieTest.testAddMovie" />
