@@ -29,4 +29,14 @@ public class MovieListingApp {
     public List<Movie> getMovies(){
         return movies;
     }
+
+    // Get movie details
+    public Movie getMovieDetails(String title) {
+        for (Movie movie : movies) {
+            if (movie.getTitle().equalsIgnoreCase(title)) {
+                return movie;
+            }
+        }
+        return null;
+    }
 }
